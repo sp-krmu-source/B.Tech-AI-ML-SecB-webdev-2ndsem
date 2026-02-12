@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form id="form">
+        <input type="text" id="myInput">
+        <button>Submit</button>
+    </form>
+
+    <script>
+        const form = document.getElementById("form");
+        const myInput=document.getElementById("myInput")
+        form.addEventListener("submit",(event)=>{
+            event.preventDefault();
+            console.log(myInput.value);
+        })
+    </script>
+
+    <!-- <input type="text" id="myInput">
+
+    <p id="output"></p>
+
+    <script src="./script.js"></script> -->
+</body>
+
+</html>

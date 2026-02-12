@@ -19,13 +19,12 @@ console.log(words2)
 
 // regular function
 function demo(){
-    console.log("demo")
+    console.log("demo");
 }
-demo()
-function sample(a,b){
-    return a+b;
+function sample(){
+    console.log("sample");
 }
-console.log(sample(5,10))
+sample(demo())
 
 // arrow function 
 // advantage: doesn't need return and function keyword and it will perform asynchronously.
