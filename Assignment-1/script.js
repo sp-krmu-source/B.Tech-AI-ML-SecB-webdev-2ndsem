@@ -76,7 +76,6 @@ eventContainer.addEventListener("click", (event) => {
     if (event.target.classList.contains("delete-btn")) {
         card.remove();
     }
-
     if (!eventContainer.querySelector(".event-card")) {
         eventContainer.innerHTML = `
         <div class="empty-state">No events yet. Add your first event!</div>
